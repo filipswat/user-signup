@@ -21,7 +21,7 @@ def validate():
 
     valid_username = re.compile(r"^[\w]{3,20}$")
     valid_password = re.compile(r"^[\w]{3,20}$")
-    valid_email = re.compile(r"^[\w]@[\w]\.[\w]")
+    valid_email = re.compile(r"^[a-zA-Z0-9\.]+@[\w]+\.[\w]+")
 
     username = request.form["username"]
     password = request.form["password"]
